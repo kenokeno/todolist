@@ -12,7 +12,7 @@ import java.util.List;
  * @author kno_k
  */
 public class ServicioTarea {
-    private List<Tarea> listaTareas = new ArrayList();
+    private List<Tarea> listaTareas = new ArrayList<Tarea>();
     
     /**
     * Método que añade tareas al sistema
@@ -53,7 +53,7 @@ public class ServicioTarea {
     
     public boolean eliminarTarea(Tarea tarea){
         List<Tarea> _listaTareas 
-                = new ArrayList<Tarea>();
+                = new ArrayList();
         for(Tarea _tarea : listaTareas){
             if(!_tarea.getDescripcion()
                     .equalsIgnoreCase(
